@@ -41,5 +41,11 @@ public class Transaccion {
 	public void setTipoTransaccion(String tipoTransaccion) {
 		this.tipoTransaccion = tipoTransaccion;
 	}
+	
+	@Override
+	public String toString() {
+		return "Transaccion [id=" + id + ", fechaRegistro=" + fechaRegistro + ", comision=" + comision + ", monto="
+				+ monto + ", tipoTransaccion=" + tipoTransaccion + "]";
+	}
 
 }

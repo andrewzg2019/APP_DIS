@@ -55,5 +55,12 @@ public class Cuenta {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+	
+	@Override
+	public String toString() {
+		return "Cuenta [numeroCuenta=" + numeroCuenta + ", saldo=" + saldo + ", tipoCuenta=" + tipoCuenta
+				+ ", fechaRegistro=" + fechaRegistro + ", estado=" + estado + ", empleado=" + empleado + ", cliente="
+				+ cliente + "]";
+	}
 
 }

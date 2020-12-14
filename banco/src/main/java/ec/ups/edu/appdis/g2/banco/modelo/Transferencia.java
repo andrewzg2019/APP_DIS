@@ -41,4 +41,10 @@ public class Transferencia {
 	public void setComision(double comision) {
 		this.comision = comision;
 	}
+	
+	@Override
+	public String toString() {
+		return "Transferencia [id=" + id + ", fechaRegistro=" + fechaRegistro + ", cuentaOrigen=" + cuentaOrigen
+				+ ", cuentaDestino=" + cuentaDestino + ", comision=" + comision + "]";
+	}
 }
