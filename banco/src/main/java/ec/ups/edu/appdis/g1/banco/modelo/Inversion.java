@@ -1,4 +1,4 @@
-package ec.ups.edu.appdis.g2.banco.modelo;
+package ec.ups.edu.appdis.g1.banco.modelo;
 
 public class Inversion {
 	
@@ -8,8 +8,15 @@ public class Inversion {
 	private String plazo;
 	private String tasa;
 	private double interesesGanados;
+	private Inversion inversion;
 	
 	
+	public Inversion getInversion() {
+		return inversion;
+	}
+	public void setInversion(Inversion inversion) {
+		this.inversion = inversion;
+	}
 	public String getIdInversion() {
 		return idInversion;
 	}

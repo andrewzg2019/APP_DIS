@@ -1,6 +1,7 @@
-package ec.ups.edu.appdis.g2.banco.modelo;
+package ec.ups.edu.appdis.g1.banco.modelo;
 
 import java.util.Date;
+import java.util.List;
 
 public class Cuenta {
 	
@@ -11,8 +12,14 @@ public class Cuenta {
 	private String estado;
 	private Empleado empleado;
 	private Cliente cliente;
+	private List<Transaccion> transacciones;
 	
-	
+	public List<Transaccion> getTransacciones() {
+		return transacciones;
+	}
+	public void setTransacciones(List<Transaccion> transacciones) {
+		this.transacciones = transacciones;
+	}
 	public int getNumeroCuenta() {
 		return numeroCuenta;
 	}

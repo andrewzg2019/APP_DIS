@@ -1,4 +1,4 @@
-package ec.ups.edu.appdis.g2.banco.modelo;
+package ec.ups.edu.appdis.g1.banco.modelo;
 
 import java.util.Date;
 
@@ -16,8 +16,15 @@ public class Solicitud_Inversion {
 	private String cedulaIMG;
 	private String planillaIMG;
 	private Cliente cliente;
+	private Empleado empleado;
 	
 	
+	public Empleado getEmpleado() {
+		return empleado;
+	}
+	public void setEmpleado(Empleado empleado) {
+		this.empleado = empleado;
+	}
 	public int getId() {
 		return id;
 	}
