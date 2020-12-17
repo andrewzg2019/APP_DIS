@@ -40,4 +40,5 @@ public class ClienteDAO {
 		q.setParameter(1, 1);
 		return (List<Cliente>) q.getResultList();
 	}
+	
 }
