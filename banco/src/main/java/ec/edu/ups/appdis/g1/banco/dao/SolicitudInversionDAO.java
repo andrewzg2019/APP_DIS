@@ -1,13 +1,18 @@
-package ec.ups.edu.appdis.g1.banco.dao;
+package ec.edu.ups.appdis.g1.banco.dao;
 
 import java.sql.SQLException;
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import ec.edu.ups.appdis.g1.modelo.SolicitudInversion;
+import ec.edu.ups.appdis.g1.banco.modelo.SolicitudInversion;
 
-public class SolicitudInversionInversionDAO {
+public class SolicitudInversionDAO {
+	
+	@Inject
+	private EntityManager em;
 
 	public boolean insertJPA(SolicitudInversion entity) throws SQLException {
 		em.persist(entity);

@@ -1,24 +1,26 @@
-package ec.ups.edu.appdis.g1.banco.modelo;
+package ec.edu.ups.appdis.g1.banco.modelo;
 
 import java.util.List;
 
 public class Cliente {
 	
-	private int id;
+	private String dni;
 	private String nombre;
 	private String apellido;
 	private String direccion;
 	private String email;
 	private String telefono;
-	private List<Solicitud_Inversion> solicitudLista;
+	private List<SolicitudInversion> solicitudLista;
 	private List<Cuenta> cuentasLista;
 	private String nombreUsuario;
 	private int contrasenia;
-	public int getId() {
-		return id;
+	
+	
+	public String getDni() {
+		return dni;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setDni(String dni) {
+		this.dni = dni;
 	}
 	public String getNombre() {
 		return nombre;
@@ -50,10 +52,10 @@ public class Cliente {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public List<Solicitud_Inversion> getSolicitudLista() {
+	public List<SolicitudInversion> getSolicitudLista() {
 		return solicitudLista;
 	}
-	public void setSolicitudLista(List<Solicitud_Inversion> solicitudLista) {
+	public void setSolicitudLista(List<SolicitudInversion> solicitudLista) {
 		this.solicitudLista = solicitudLista;
 	}
 	public List<Cuenta> getCuentasLista() {
@@ -74,14 +76,13 @@ public class Cliente {
 	public void setContrasenia(int contrasenia) {
 		this.contrasenia = contrasenia;
 	}
+	
 	@Override
 	public String toString() {
-		return "Cliente [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion
+		return "Cliente [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion
 				+ ", email=" + email + ", telefono=" + telefono + ", solicitudLista=" + solicitudLista
 				+ ", cuentasLista=" + cuentasLista + ", nombreUsuario=" + nombreUsuario + ", contrasenia=" + contrasenia
 				+ "]";
 	}
-	
-	
 	
 }

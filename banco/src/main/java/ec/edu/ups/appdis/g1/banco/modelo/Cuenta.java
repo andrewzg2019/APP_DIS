@@ -1,4 +1,4 @@
-package ec.ups.edu.appdis.g1.banco.modelo;
+package ec.edu.ups.appdis.g1.banco.modelo;
 
 import java.util.Date;
 import java.util.List;

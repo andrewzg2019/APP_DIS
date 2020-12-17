@@ -1,8 +1,8 @@
-package ec.ups.edu.appdis.g1.banco.modelo;
+package ec.edu.ups.appdis.g1.banco.modelo;
 
 import java.util.Date;
 
-public class Solicitud_Inversion {
+public class SolicitudInversion {
 	
 	private int id;
 	private int plazo;

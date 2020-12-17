@@ -1,12 +1,17 @@
-package ec.ups.edu.appdis.g1.banco.dao;
+package ec.edu.ups.appdis.g1.banco.dao;
 import java.sql.SQLException;
 import java.util.List;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import ec.edu.ups.appdis.g1.modelo.Transaccion;
-import ec.ups.edu.appdis.g1.banco.modelo.Transaccion;
+import ec.edu.ups.appdis.g1.banco.modelo.Transaccion;
 
 public class TransaccionDAO {
+	
+	@Inject
+	private EntityManager em;
 
 	public boolean insertJPA(Transaccion entity) throws SQLException {
 		em.persist(entity);

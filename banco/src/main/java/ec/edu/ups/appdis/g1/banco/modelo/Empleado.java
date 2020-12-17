@@ -1,16 +1,17 @@
-package ec.ups.edu.appdis.g1.banco.modelo;
+package ec.edu.ups.appdis.g1.banco.modelo;
 
 public class Empleado {
 	
-	private int cedula;
+	private String cedula;
 	private String nombre;
 	private String apellido;
 	private String telefono;
 	private String rol;
-	public int getCedula() {
+	
+	public String getCedula() {
 		return cedula;
 	}
-	public void setCedula(int cedula) {
+	public void setCedula(String cedula) {
 		this.cedula = cedula;
 	}
 	public String getNombre() {

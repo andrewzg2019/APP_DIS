@@ -1,14 +1,18 @@
-package ec.ups.edu.appdis.g1.banco.dao;
+package ec.edu.ups.appdis.g1.banco.dao;
 
 import java.sql.SQLException;
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import ec.edu.ups.appdis.g1.modelo.Sesion;
-import ec.ups.edu.appdis.g1.banco.modelo.Sesion;
+import ec.edu.ups.appdis.g1.banco.modelo.Sesion;
 
 public class SesionDAO {
+	
+	@Inject
+	private EntityManager em;
 
 	public boolean insertJPA(Sesion entity) throws SQLException {
 		em.persist(entity);

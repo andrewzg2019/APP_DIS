@@ -1,4 +1,4 @@
-package ec.ups.edu.appdis.g1.banco.dao;
+package ec.edu.ups.appdis.g1.banco.dao;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -7,12 +7,13 @@ import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import ec.ups.edu.appdis.g1.banco.modelo.Cliente;
+import ec.edu.ups.appdis.g1.banco.modelo.Cliente;
 
 public class ClienteDAO {
 
 	@Inject
 	private EntityManager em;
+	
 	public boolean insertJPA(Cliente entity) throws SQLException {
 		em.persist(entity);
 		return true;
