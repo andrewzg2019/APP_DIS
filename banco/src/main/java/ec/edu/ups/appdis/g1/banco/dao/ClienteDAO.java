@@ -1,18 +1,21 @@
 package ec.edu.ups.appdis.g1.banco.dao;
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import ec.edu.ups.appdis.g1.banco.modelo.Cliente;
-
+@Stateless
 public class ClienteDAO {
-
 	@Inject
 	private EntityManager em;
+	@Inject
+	private Connection con;
 	
 	public boolean insertJPA(Cliente entity) throws SQLException {
 		em.persist(entity);

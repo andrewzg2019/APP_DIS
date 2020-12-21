@@ -2,6 +2,8 @@ package ec.edu.ups.appdis.g1.banco.modelo;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+@Entity
 public class Transferencia {
 	
 	private int id;

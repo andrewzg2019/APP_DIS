@@ -2,8 +2,11 @@ package ec.edu.ups.appdis.g1.banco.modelo;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class SolicitudInversion {
-	
+	@Id
 	private int id;
 	private int plazo;
 	private double monto;

@@ -28,7 +28,7 @@
                     	<driver>postgresql-driver</driver>
                     <security>
                         <user-name>postgres</user-name>
-                        <password>admin</password>
+                        <password>802258</password>
                     </security>
                 </datasource>
 

@@ -3,8 +3,11 @@ package ec.edu.ups.appdis.g1.banco.modelo;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class Cuenta {
-	
+	@Id
 	private int numeroCuenta;
 	private double saldo;
 	private String tipoCuenta;

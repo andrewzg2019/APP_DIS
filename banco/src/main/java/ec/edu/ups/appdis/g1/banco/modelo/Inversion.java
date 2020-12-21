@@ -1,5 +1,8 @@
 package ec.edu.ups.appdis.g1.banco.modelo;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Inversion {
 	
 	private String idInversion;

@@ -2,12 +2,13 @@ package ec.edu.ups.appdis.g1.banco.dao;
 import java.sql.SQLException;
 import java.util.List;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import ec.edu.ups.appdis.g1.banco.modelo.Transaccion;
-
+@Stateless
 public class TransaccionDAO {
 	
 	@Inject

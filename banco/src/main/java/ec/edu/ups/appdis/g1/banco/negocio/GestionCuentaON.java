@@ -1,5 +1,8 @@
 package ec.edu.ups.appdis.g1.banco.negocio;
 
+import javax.ejb.Stateless;
+
+@Stateless
 public class GestionCuentaON {
 	
 	public void crearCuenta() {
